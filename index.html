@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Login</title>
+    <script src="firebase.js" defer type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="orangeBG">
+            <div class="box signin">
+                <h2>Already Have An Account?</h2>
+                <button class="signinbtn">Sign in</button>
+            </div>
+            <div class="box signup">
+                <h2>Create An Account?</h2>
+                <button class="signupbtn">Register</button>
+            </div>
+        </div>
+        <div class="form-box">
+            <div class="form signinform">
+                <form id="signin" name="signinformform">
+                    <h3>Sign In</h3>
+                    <input type="email" id="nemail" placeholder="Email">
+                    <input type="password" id="npassword" placeholder="Password">
+                    <input type="submit" value="Sign In">
+                    <a href="#">Forget Password?</a>
+                </form>
+            </div>
+            <div class="form signupform" >
+                <form id="signup" name="signupformform">
+                    <h3>Sign Up</h3>
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="email" id="email" placeholder="Email Address">
+                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="repassword" placeholder="Confirm Password">
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
